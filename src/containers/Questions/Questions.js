@@ -23,6 +23,10 @@ class Questions extends Component {
         this.props.history.push("/details" + url);
     }
 
+    handleNewQuestion = () => {
+        this.props.history.push("/newQuestion");
+    }
+
     render() {
         let questionCards = this.state.questions.map( card => (
             <QuestionCard
@@ -33,7 +37,7 @@ class Questions extends Component {
         ));
         return(
             <div className={classes.Questions}>
-                <button><span className="fa fa-plus fa-2x"></span>Create A New Question</button>
+                <button onClick={this.handleNewQuestion}><span className="fa fa-plus fa-2x"></span>Create A New Question</button>
                 {questionCards}
             </div>
         )

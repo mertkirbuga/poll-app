@@ -15,6 +15,12 @@
 }
 
 .QuestionCard:hover {
-    /* background-color: #E2F4F8 */
     background-color: #FFE082;
+}
+
+@media screen and (max-width: 768px) {
+    .QuestionCard {
+        width: 80%;
+        margin: 10px auto;
+    }
 }

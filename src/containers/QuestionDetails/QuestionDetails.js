@@ -14,7 +14,6 @@ class QuestionDetails extends Component {
             axios
                 .get(queryString)
                 .then((res) => {
-                    console.log(res.data);
                     this.setState({ detailCard: res.data });
                     this.setState({ loading: false });
                 })
