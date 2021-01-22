@@ -1,20 +1,20 @@
-.QuestionCard {
+.DetailedQuestionCard {
     width: 500px;
     border: 2px solid black;
     box-shadow: 1px 1px 1px black ;
     padding: 15px;
-    margin: 5px auto;
+    margin: 50px auto;
     background-color: white;
     list-style: none;
-    cursor: pointer;
     border-radius: 5px;
 }
 
-.QuestionCard > li {
+.DetailedQuestionCard > div {
+    cursor: pointer;
     font-style: italic;
+    margin: 5px;
 }
 
-.QuestionCard:hover {
-    /* background-color: #E2F4F8 */
+.DetailedQuestionCard > div:hover {
     background-color: #FFE082;
 }

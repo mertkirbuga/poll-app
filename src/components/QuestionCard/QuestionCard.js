@@ -4,12 +4,14 @@ import "font-awesome/css/font-awesome.min.css";
 
 const questionCard = (props) => {
     return (
-        <div className={classes.QuestionCard}>
+        <div 
+            onClick={props.questionDetails}
+            className={classes.QuestionCard}>
             <h1>{props.questionHeader}</h1>
             {props.questionChoices.map((choice) => (
                 <li key={choice.url}>
                     {choice.choice}
-                    <i class="fa fa-heart"></i>
+                    <i className="fa fa-heart" style={{paddingLeft: "10px", paddingRight:"5px", color:"#BF360C"}}></i>
                     {choice.votes}
                 </li>
             ))}

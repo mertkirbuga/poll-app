@@ -6,11 +6,23 @@
 }
 
 button {
-    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
     height: 50px;
     color: white;
     border: 1px solid black;
-    background-color: deepskyblue;
-    border-radius: 10px;
+    /* background-color: #36A6CD; */
+    background-color: #FEC13D;
+    border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 20px;
+    font-size: medium;
+    font-weight: bold;
+    vertical-align: text-bottom;
+}
+
+span {
+    padding-right: 5px;
 }
