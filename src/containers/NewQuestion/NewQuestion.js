@@ -54,26 +54,23 @@ class NewQuestion extends Component {
         if(id === "question") {
             this.setState({question: value });
         } else {
-            const finalId =  (parseInt(id) - 1).toString();
             let updatedChoice = [
                 ...this.state.choices,
             ];
-            updatedChoice[finalId] = value;
+            updatedChoice[id] = value;
             this.setState({choices: updatedChoice});
         }
     }
 
     submitHandler = (event) => {
+        debugger;
         event.preventDefault();
         let choices = [
             ...this.state.choices
-        ]
-        choices.map( (element,index) => {
-            if(element === "" || element === undefined || element === null) {
-                choices.splice(index,1);
-            }
-            return choices;
-        })
+        ];
+        choices = choices.filter( element => {
+            return element !== undefined;
+        });
         const newQuestion = {
             question: this.state.question,
             choices: choices
