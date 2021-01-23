@@ -64,12 +64,20 @@ class NewQuestion extends Component {
 
     submitHandler = (event) => {
         event.preventDefault();
+        if(this.state.question === undefined || this.state.question === "" || this.state.question === null) {
+            alert("Question field cannot be empty!");
+            return;
+        }
         let choices = [
             ...this.state.choices
         ];
         choices = choices.filter( element => {
             return element !== undefined;
         });
+        if(choices.length <= 1) {
+            alert("Please enter more than 1 poll option !");
+            return;
+        }
         const newQuestion = {
             question: this.state.question,
             choices: choices
