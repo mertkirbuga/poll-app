@@ -63,7 +63,6 @@ class NewQuestion extends Component {
     }
 
     submitHandler = (event) => {
-        debugger;
         event.preventDefault();
         let choices = [
             ...this.state.choices
