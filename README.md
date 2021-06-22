@@ -1,4 +1,4 @@
-# Yemeksepeti Poll App
+# Poll App
 
 This is an app that is capable of creating new polls and voting to those polls.\
 
@@ -17,10 +17,4 @@ users will be able to vote to desired vote option.
 ## Create Question Page
 
 On this page, users are able to create their own polls. Firstly, they should enter title of their question. Afterwards, poll options can be entered. Users are free to add new options from "Add New Poll Option" button according to their needs. When all necessary information has been filled, by using "Submit Question" button, question can be created.
-
-
-## Technical Notes
-
-If a user wants to run this application on local machine, first, it should be cloned from GitHub page. In order to convert the application to runnable app, "npm install" script should be run. After installation process has been done, by using "npm start" script, application will be served on browser.
-
 
